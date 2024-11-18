@@ -1,0 +1,7 @@
+# created by virtualenv automatically
+.DS_Store
+bin/
+lib/
+video_input/
+pyvenv.cfg
+maisquared-d2412aaec7d7.json
