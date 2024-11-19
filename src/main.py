@@ -40,15 +40,12 @@ def list_child_folders(parent_name, child_id):
         "serverUrl": None,
         "levelIds": all_folders,
     }
-    path = 'output/{0}/manifest.json'.format(parent_name,)
+    path = 'output/{0}/manifest2.json'.format(parent_name,)
     createManifest(data, path)
-    
-
 
 def createManifest(data, path):
     with open(path, "w") as file:
-        json.dump(data, file, indent=4)
-
+        json.dump(data, file, indent=4, ensure_ascii=False)
 
 def createParentFolder(folder_name):
     folder_path = 'output/{0}'.format(folder_name)
